@@ -105,7 +105,12 @@ try {
         session_id = 'invalid-provider-test'
     } | ConvertTo-Json -Compress
     $invalidToolOutput = @($invalidToolInput | & $windowsPowerShell -NoProfile -NonInteractive -ExecutionPolicy Bypass -File $toolEvaluatorPath -ApiKey 'test-key' -Model 'openai/gpt-5.6-sol')[-1] | ConvertFrom-Json
-    Assert-True ($invalidToolOutput.hookSpecificOutput.permissionDecision -eq 'ask') 'Tool evaluator did not fail closed to confirmation.'
+    Assert-True ([bool]$invalidToolOutput.continue) 'Tool evaluator did not continue after a rejected provider.'
+    Assert-True ($null -eq $invalidToolOutput.hookSpecificOutput) 'Rejected provider overrode the user permission mode.'
+
+    $missingToolOutput = @(& $windowsPowerShell -NoProfile -NonInteractive -ExecutionPolicy Bypass -File $toolEvaluatorPath -InputJson '{}')[-1] | ConvertFrom-Json
+    Assert-True ([bool]$missingToolOutput.continue) 'Tool evaluator did not continue when the tool name was missing.'
+    Assert-True ($null -eq $missingToolOutput.hookSpecificOutput) 'Missing tool input overrode the user permission mode.'
 
     $benchmarkOutput = @(& $windowsPowerShell -NoProfile -ExecutionPolicy Bypass -File $benchmarkSelfTestPath)
     Assert-True ($LASTEXITCODE -eq 0) 'Benchmark self-test failed.'

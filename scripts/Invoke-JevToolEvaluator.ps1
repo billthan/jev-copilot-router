@@ -4,7 +4,6 @@ param(
     [string]$ApiKey,
     [string]$Model = 'typesafe/jev-1.13',
     [string]$Endpoint = 'https://openrouter.ai/api/alpha/decisions',
-    [double]$AllowThreshold = 0.78,
     [double]$DenyThreshold = 0.90
 )
 
@@ -13,25 +12,28 @@ $ErrorActionPreference = 'Stop'
 
 function Write-PreToolHookOutput {
     param(
-        [ValidateSet('allow', 'ask', 'deny')]
+        [ValidateSet('deny')]
         [string]$Decision,
         [string]$Reason,
         [string]$AdditionalContext
     )
 
-    $hookOutput = [ordered]@{
-        hookEventName = 'PreToolUse'
-        permissionDecision = $Decision
-        permissionDecisionReason = $Reason
+    $output = [ordered]@{
+        continue = $true
     }
-    if ($AdditionalContext) {
-        $hookOutput.additionalContext = $AdditionalContext
+    if ($Decision) {
+        $hookOutput = [ordered]@{
+            hookEventName = 'PreToolUse'
+            permissionDecision = $Decision
+            permissionDecisionReason = $Reason
+        }
+        if ($AdditionalContext) {
+            $hookOutput.additionalContext = $AdditionalContext
+        }
+        $output.hookSpecificOutput = $hookOutput
     }
 
-    [ordered]@{
-        continue = $true
-        hookSpecificOutput = $hookOutput
-    } | ConvertTo-Json -Depth 10 -Compress | Write-Output
+    $output | ConvertTo-Json -Depth 10 -Compress | Write-Output
 }
 
 try {
@@ -39,7 +41,7 @@ try {
         $InputJson = [Console]::In.ReadToEnd()
     }
     if (-not $InputJson) {
-        Write-PreToolHookOutput -Decision 'ask' -Reason 'Jev received no tool-call event.'
+        Write-PreToolHookOutput
         exit 0
     }
 
@@ -48,12 +50,12 @@ try {
     $sessionId = [string]$hookInput.session_id
     $workingDirectory = [string]$hookInput.cwd
     if ([string]::IsNullOrWhiteSpace($toolName)) {
-        Write-PreToolHookOutput -Decision 'ask' -Reason 'Jev could not identify the requested tool.'
+        Write-PreToolHookOutput
         exit 0
     }
 
     if (-not (Test-JevProviderPolicy -Model $Model -Endpoint $Endpoint)) {
-        Write-PreToolHookOutput -Decision 'ask' -Reason 'Provider policy rejected the Jev evaluation route.'
+        Write-PreToolHookOutput
         exit 0
     }
 
@@ -99,23 +101,14 @@ try {
         $choiceProbability = [double]$answer.probabilities.PSObject.Properties[$choice].Value
     }
 
-    $decision = 'ask'
-    if ($choice -eq 'allow' -and $choiceProbability -ge $AllowThreshold) {
-        $decision = 'allow'
-    }
-    elseif ($choice -eq 'deny' -and $choiceProbability -ge $DenyThreshold) {
-        $decision = 'deny'
+    if ($choice -eq 'deny' -and $choiceProbability -ge $DenyThreshold) {
+        $reason = 'Jev chose deny with probability {0:N3} and confidence {1:N3}.' -f $choiceProbability, $confidence
+        Write-PreToolHookOutput -Decision 'deny' -Reason $reason -AdditionalContext "Jev tool evaluation resolved to 'deny'. Do not bypass this decision with a different tool or command."
+        exit 0
     }
 
-    $reason = 'Jev chose {0} with probability {1:N3} and confidence {2:N3}.' -f $choice, $choiceProbability, $confidence
-    $context = if ($decision -eq 'allow') {
-        $null
-    }
-    else {
-        "Jev tool evaluation resolved to '$decision'. Do not bypass this decision with a different tool or command."
-    }
-    Write-PreToolHookOutput -Decision $decision -Reason $reason -AdditionalContext $context
+    Write-PreToolHookOutput
 }
 catch {
-    Write-PreToolHookOutput -Decision 'ask' -Reason 'Jev evaluation was unavailable, so explicit confirmation is required.' -AdditionalContext 'The tool evaluator failed closed to user confirmation.'
+    Write-PreToolHookOutput
 }

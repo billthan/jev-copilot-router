@@ -31,7 +31,9 @@ The `PreToolUse` hook sends every requested tool call to Jev as a typed Choice d
 - `ask`: meaningful side effects, publication, deployment, installation, broad writes, sensitive access, cost, or uncertainty
 - `deny`: unrelated, destructive, credential-disclosing, safeguard-bypassing, or privilege-escalating
 
-An `allow` decision requires probability `>= 0.78`. A `deny` decision requires probability `>= 0.90`. Lower-confidence results become `ask`. Missing context, credentials, invalid provider configuration, timeouts, and API failures also become `ask`.
+VS Code remains the permission authority. Jev `allow` and `ask` classifications return no permission override, so the user's current mode decides whether the tool runs, prompts, or is auto-approved. This preserves restrictive settings while preventing the hook from prompting in Allow All and Autopilot modes.
+
+A Jev `deny` decision blocks the call only when its probability is `>= 0.90`. Lower-confidence results, missing context, unavailable credentials, invalid provider configuration, timeouts, and API failures also return no permission override instead of forcing a prompt.
 
 The latest user prompt and selected skills are stored locally per session so Jev can judge each tool call against the active goal.
 
@@ -51,7 +53,7 @@ Production routing is intentionally split:
 | Work | Provider |
 |---|---|
 | Skill classification | Jev through OpenRouter Decisions API |
-| Tool permission decision | Jev through OpenRouter Decisions API |
+| Tool risk classification | Jev through OpenRouter Decisions API |
 | Agent response generation | GitHub Copilot |
 | Subagents and utility model work | GitHub Copilot |
 
@@ -98,7 +100,7 @@ Start a new agent session after installation.
   -WorkspaceRoot "C:\path\to\your\workspace-root"
 ```
 
-The test suite is offline. It validates PowerShell 5.1 parsing, provider restrictions, exhaustive skill discovery, secret redaction, session state, isolated installation, rejected-provider behavior, and benchmark scoring.
+The test suite is offline. It validates PowerShell 5.1 parsing, provider restrictions, exhaustive skill discovery, secret redaction, session state, isolated installation, user-permission precedence, rejected-provider behavior, and benchmark scoring.
 
 ## Benchmark
 
@@ -120,7 +122,7 @@ Jev was approximately 4.9 times faster and 5.9 times cheaper on the seed corpus.
 
 - `scripts/JevRouter.Common.ps1`: provider policy, inventory, redaction, session state, and API helpers
 - `scripts/Invoke-JevSkillRouter.ps1`: exhaustive skill selection hook
-- `scripts/Invoke-JevToolEvaluator.ps1`: all-tool permission hook
+- `scripts/Invoke-JevToolEvaluator.ps1`: all-tool risk evaluation hook
 - `scripts/Install-JevRouter.ps1`: user-level installer
 - `tests/Run-Tests.ps1`: offline validation suite
 - `benchmark/`: corpus, runner, self-test, and initial report
