@@ -67,7 +67,7 @@ function Invoke-JevDecision {
         Authorization = "Bearer $resolvedApiKey"
         'Content-Type' = 'application/json'
         'X-OpenRouter-Title' = 'Jev Copilot Router'
-    } -Body ($Body | ConvertTo-Json -Depth 30 -Compress) -TimeoutSec $TimeoutSeconds
+    } -Body ($Body | ConvertTo-Json -Depth 30 -Compress) -TimeoutSec $TimeoutSeconds -DisableKeepAlive
 }
 
 function ConvertTo-RedactedValue {
