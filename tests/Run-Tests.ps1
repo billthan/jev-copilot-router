@@ -11,6 +11,7 @@ $skillRouterPath = Join-Path $repositoryRoot 'scripts\Invoke-JevSkillRouter.ps1'
 $toolEvaluatorPath = Join-Path $repositoryRoot 'scripts\Invoke-JevToolEvaluator.ps1'
 $installerPath = Join-Path $repositoryRoot 'scripts\Install-JevRouter.ps1'
 $benchmarkSelfTestPath = Join-Path $repositoryRoot 'benchmark\self-test.ps1'
+$toolBenchmarkSelfTestPath = Join-Path $repositoryRoot 'benchmark\tool-benchmark-self-test.ps1'
 $windowsPowerShell = Join-Path $env:SystemRoot 'System32\WindowsPowerShell\v1.0\powershell.exe'
 $assertionCount = 0
 
@@ -115,6 +116,10 @@ try {
     $benchmarkOutput = @(& $windowsPowerShell -NoProfile -ExecutionPolicy Bypass -File $benchmarkSelfTestPath)
     Assert-True ($LASTEXITCODE -eq 0) 'Benchmark self-test failed.'
     Assert-True (($benchmarkOutput -join [Environment]::NewLine) -match 'Benchmark self-test passed') 'Benchmark self-test success marker was missing.'
+
+    $toolBenchmarkOutput = @(& $windowsPowerShell -NoProfile -ExecutionPolicy Bypass -File $toolBenchmarkSelfTestPath)
+    Assert-True ($LASTEXITCODE -eq 0) 'Tool benchmark self-test failed.'
+    Assert-True (($toolBenchmarkOutput -join [Environment]::NewLine) -match 'Tool benchmark self-test passed') 'Tool benchmark self-test success marker was missing.'
 }
 finally {
     $env:JEV_ROUTER_STATE_ROOT = $previousStateRoot

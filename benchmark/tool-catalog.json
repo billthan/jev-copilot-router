@@ -1,0 +1,2159 @@
+{
+    "schema_version":  1,
+    "generated_at":  "2026-09-23T13:00:16.2812222Z",
+    "source":  {
+                   "registry":  "VS Code Copilot toolEmbeddings.json",
+                   "registry_sha256":  "9c23164d0125c0b2c26d938916f0ceff02449b655fbd31da7f3fe8be10188952",
+                   "registry_count":  213,
+                   "supplement":  "tool-catalog-supplement.json",
+                   "supplement_count":  56
+               },
+    "total_count":  268,
+    "tools":  [
+                  {
+                      "id":  "tool_000",
+                      "name":  "apply_patch",
+                      "hint":  "apply patch",
+                      "sources":  [
+                                      "current-agent-core-and-deferred-tools"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_001",
+                      "name":  "click_element",
+                      "hint":  "click element",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_002",
+                      "name":  "configure_notebook",
+                      "hint":  "configure notebook",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_003",
+                      "name":  "configure_python_environment",
+                      "hint":  "configure python environment",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_004",
+                      "name":  "container-tools_get-config",
+                      "hint":  "container tools get config",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_005",
+                      "name":  "copilot_getNotebookSummary",
+                      "hint":  "copilot get Notebook Summary",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_006",
+                      "name":  "create_and_run_task",
+                      "hint":  "create and run task",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_007",
+                      "name":  "create_directory",
+                      "hint":  "create directory",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_008",
+                      "name":  "create_file",
+                      "hint":  "create file",
+                      "sources":  [
+                                      "current-agent-core-and-deferred-tools"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_009",
+                      "name":  "create_new_jupyter_notebook",
+                      "hint":  "create new jupyter notebook",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_010",
+                      "name":  "create_new_workspace",
+                      "hint":  "create new workspace",
+                      "sources":  [
+                                      "current-agent-core-and-deferred-tools"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_011",
+                      "name":  "drag_element",
+                      "hint":  "drag element",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_012",
+                      "name":  "edit_notebook_file",
+                      "hint":  "edit notebook file",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_013",
+                      "name":  "evaluateExpressionInDebugSession",
+                      "hint":  "evaluate Expression In Debug Session",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_014",
+                      "name":  "fabric_notebookCompareTool",
+                      "hint":  "fabric notebook Compare Tool",
+                      "sources":  [
+                                      "current-agent-core-and-deferred-tools"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_015",
+                      "name":  "fabric_notebookContextTool",
+                      "hint":  "fabric notebook Context Tool",
+                      "sources":  [
+                                      "current-agent-core-and-deferred-tools"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_016",
+                      "name":  "fabric_notebookCreateTool",
+                      "hint":  "fabric notebook Create Tool",
+                      "sources":  [
+                                      "current-agent-core-and-deferred-tools"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_017",
+                      "name":  "fabric_notebookDownloadTool",
+                      "hint":  "fabric notebook Download Tool",
+                      "sources":  [
+                                      "current-agent-core-and-deferred-tools"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_018",
+                      "name":  "fabric_notebookListTool",
+                      "hint":  "fabric notebook List Tool",
+                      "sources":  [
+                                      "current-agent-core-and-deferred-tools"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_019",
+                      "name":  "fabric_notebookPublishTool",
+                      "hint":  "fabric notebook Publish Tool",
+                      "sources":  [
+                                      "current-agent-core-and-deferred-tools"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_020",
+                      "name":  "fabric_setDefaultLakehouseTool",
+                      "hint":  "fabric set Default Lakehouse Tool",
+                      "sources":  [
+                                      "current-agent-core-and-deferred-tools"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_021",
+                      "name":  "fabric_workspaceInfoTool",
+                      "hint":  "fabric workspace Info Tool",
+                      "sources":  [
+                                      "current-agent-core-and-deferred-tools"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_022",
+                      "name":  "fetch_webpage",
+                      "hint":  "fetch webpage",
+                      "sources":  [
+                                      "current-agent-core-and-deferred-tools"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_023",
+                      "name":  "file_search",
+                      "hint":  "file search",
+                      "sources":  [
+                                      "current-agent-core-and-deferred-tools"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_024",
+                      "name":  "get_errors",
+                      "hint":  "get errors",
+                      "sources":  [
+                                      "current-agent-core-and-deferred-tools"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_025",
+                      "name":  "get_python_environment_details",
+                      "hint":  "get python environment details",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_026",
+                      "name":  "get_python_executable_details",
+                      "hint":  "get python executable details",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_027",
+                      "name":  "get_task_output",
+                      "hint":  "get task output",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_028",
+                      "name":  "get_terminal_output",
+                      "hint":  "get terminal output",
+                      "sources":  [
+                                      "current-agent-core-and-deferred-tools"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_029",
+                      "name":  "get_vscode_api",
+                      "hint":  "get vscode api",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_030",
+                      "name":  "get-syntax-docs-mermaid",
+                      "hint":  "get syntax docs mermaid",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_031",
+                      "name":  "github_repo",
+                      "hint":  "github repo",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_032",
+                      "name":  "github_text_search",
+                      "hint":  "github text search",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_033",
+                      "name":  "github-pull-request_activePullRequest",
+                      "hint":  "github pull request active Pull Request",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_034",
+                      "name":  "github-pull-request_copilot-coding-agent",
+                      "hint":  "github pull request copilot coding agent",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_035",
+                      "name":  "github-pull-request_create_pull_request",
+                      "hint":  "github pull request create pull request",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_036",
+                      "name":  "github-pull-request_currentActivePullRequest",
+                      "hint":  "github pull request current Active Pull Request",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_037",
+                      "name":  "github-pull-request_doSearch",
+                      "hint":  "github pull request do Search",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_038",
+                      "name":  "github-pull-request_issue_fetch",
+                      "hint":  "github pull request issue fetch",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_039",
+                      "name":  "github-pull-request_labels_fetch",
+                      "hint":  "github pull request labels fetch",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_040",
+                      "name":  "github-pull-request_notification_fetch",
+                      "hint":  "github pull request notification fetch",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_041",
+                      "name":  "github-pull-request_pullRequestInViewport",
+                      "hint":  "github pull request pull Request In Viewport",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_042",
+                      "name":  "github-pull-request_pullRequestStatusChecks",
+                      "hint":  "github pull request pull Request Status Checks",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_043",
+                      "name":  "github-pull-request_resolveReviewThread",
+                      "hint":  "github pull request resolve Review Thread",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_044",
+                      "name":  "grep_search",
+                      "hint":  "grep search",
+                      "sources":  [
+                                      "current-agent-core-and-deferred-tools"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_045",
+                      "name":  "handle_dialog",
+                      "hint":  "handle dialog",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_046",
+                      "name":  "hover_element",
+                      "hint":  "hover element",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_047",
+                      "name":  "install_extension",
+                      "hint":  "install extension",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_048",
+                      "name":  "install_python_packages",
+                      "hint":  "install python packages",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_049",
+                      "name":  "kill_terminal",
+                      "hint":  "kill terminal",
+                      "sources":  [
+                                      "current-agent-core-and-deferred-tools"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_050",
+                      "name":  "kusto_checkQueryExecution",
+                      "hint":  "kusto check Query Execution",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_051",
+                      "name":  "kusto_runCommand",
+                      "hint":  "kusto run Command",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_052",
+                      "name":  "kusto_runQuery",
+                      "hint":  "kusto run Query",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_053",
+                      "name":  "list_dir",
+                      "hint":  "list dir",
+                      "sources":  [
+                                      "current-agent-core-and-deferred-tools"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_054",
+                      "name":  "listDebugSessions",
+                      "hint":  "list Debug Sessions",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_055",
+                      "name":  "manage_todo_list",
+                      "hint":  "manage todo list",
+                      "sources":  [
+                                      "vscode-tool-embeddings",
+                                      "current-agent-core-and-deferred-tools"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_056",
+                      "name":  "mcp_apple-develop_download_apple_code_sample",
+                      "hint":  "mcp apple develop download apple code sample",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_057",
+                      "name":  "mcp_apple-develop_get_apple_doc_content",
+                      "hint":  "mcp apple develop get apple doc content",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_058",
+                      "name":  "mcp_apple-develop_research_apple_docs",
+                      "hint":  "mcp apple develop research apple docs",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_059",
+                      "name":  "mcp_apple-develop_search_apple_docs",
+                      "hint":  "mcp apple develop search apple docs",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_060",
+                      "name":  "mcp_context7_get-library-docs",
+                      "hint":  "mcp context7 get library docs",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_061",
+                      "name":  "mcp_context7_resolve-library-id",
+                      "hint":  "mcp context7 resolve library id",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_062",
+                      "name":  "mcp_github_add_comment_to_pending_review",
+                      "hint":  "mcp github add comment to pending review",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_063",
+                      "name":  "mcp_github_add_issue_comment",
+                      "hint":  "mcp github add issue comment",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_064",
+                      "name":  "mcp_github_add_sub_issue",
+                      "hint":  "mcp github add sub issue",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_065",
+                      "name":  "mcp_github_assign_copilot_to_issue",
+                      "hint":  "mcp github assign copilot to issue",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_066",
+                      "name":  "mcp_github_cancel_workflow_run",
+                      "hint":  "mcp github cancel workflow run",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_067",
+                      "name":  "mcp_github_create_and_submit_pull_request_review",
+                      "hint":  "mcp github create and submit pull request review",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_068",
+                      "name":  "mcp_github_create_branch",
+                      "hint":  "mcp github create branch",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_069",
+                      "name":  "mcp_github_create_gist",
+                      "hint":  "mcp github create gist",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_070",
+                      "name":  "mcp_github_create_issue",
+                      "hint":  "mcp github create issue",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_071",
+                      "name":  "mcp_github_create_or_update_file",
+                      "hint":  "mcp github create or update file",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_072",
+                      "name":  "mcp_github_create_pending_pull_request_review",
+                      "hint":  "mcp github create pending pull request review",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_073",
+                      "name":  "mcp_github_create_pull_request",
+                      "hint":  "mcp github create pull request",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_074",
+                      "name":  "mcp_github_create_pull_request_with_copilot",
+                      "hint":  "mcp github create pull request with copilot",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_075",
+                      "name":  "mcp_github_create_repository",
+                      "hint":  "mcp github create repository",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_076",
+                      "name":  "mcp_github_delete_file",
+                      "hint":  "mcp github delete file",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_077",
+                      "name":  "mcp_github_delete_pending_pull_request_review",
+                      "hint":  "mcp github delete pending pull request review",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_078",
+                      "name":  "mcp_github_delete_workflow_run_logs",
+                      "hint":  "mcp github delete workflow run logs",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_079",
+                      "name":  "mcp_github_dismiss_notification",
+                      "hint":  "mcp github dismiss notification",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_080",
+                      "name":  "mcp_github_download_workflow_run_artifact",
+                      "hint":  "mcp github download workflow run artifact",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_081",
+                      "name":  "mcp_github_fork_repository",
+                      "hint":  "mcp github fork repository",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_082",
+                      "name":  "mcp_github_get_code_scanning_alert",
+                      "hint":  "mcp github get code scanning alert",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_083",
+                      "name":  "mcp_github_get_commit",
+                      "hint":  "mcp github get commit",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_084",
+                      "name":  "mcp_github_get_dependabot_alert",
+                      "hint":  "mcp github get dependabot alert",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_085",
+                      "name":  "mcp_github_get_discussion",
+                      "hint":  "mcp github get discussion",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_086",
+                      "name":  "mcp_github_get_discussion_comments",
+                      "hint":  "mcp github get discussion comments",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_087",
+                      "name":  "mcp_github_get_file_contents",
+                      "hint":  "mcp github get file contents",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_088",
+                      "name":  "mcp_github_get_issue",
+                      "hint":  "mcp github get issue",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_089",
+                      "name":  "mcp_github_get_issue_comments",
+                      "hint":  "mcp github get issue comments",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_090",
+                      "name":  "mcp_github_get_job_logs",
+                      "hint":  "mcp github get job logs",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_091",
+                      "name":  "mcp_github_get_me",
+                      "hint":  "mcp github get me",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_092",
+                      "name":  "mcp_github_get_notification_details",
+                      "hint":  "mcp github get notification details",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_093",
+                      "name":  "mcp_github_get_pull_request",
+                      "hint":  "mcp github get pull request",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_094",
+                      "name":  "mcp_github_get_pull_request_comments",
+                      "hint":  "mcp github get pull request comments",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_095",
+                      "name":  "mcp_github_get_pull_request_diff",
+                      "hint":  "mcp github get pull request diff",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_096",
+                      "name":  "mcp_github_get_pull_request_files",
+                      "hint":  "mcp github get pull request files",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_097",
+                      "name":  "mcp_github_get_pull_request_reviews",
+                      "hint":  "mcp github get pull request reviews",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_098",
+                      "name":  "mcp_github_get_pull_request_status",
+                      "hint":  "mcp github get pull request status",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_099",
+                      "name":  "mcp_github_get_secret_scanning_alert",
+                      "hint":  "mcp github get secret scanning alert",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_100",
+                      "name":  "mcp_github_get_tag",
+                      "hint":  "mcp github get tag",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_101",
+                      "name":  "mcp_github_get_workflow_run",
+                      "hint":  "mcp github get workflow run",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_102",
+                      "name":  "mcp_github_get_workflow_run_logs",
+                      "hint":  "mcp github get workflow run logs",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_103",
+                      "name":  "mcp_github_get_workflow_run_usage",
+                      "hint":  "mcp github get workflow run usage",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_104",
+                      "name":  "mcp_github_list_branches",
+                      "hint":  "mcp github list branches",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_105",
+                      "name":  "mcp_github_list_code_scanning_alerts",
+                      "hint":  "mcp github list code scanning alerts",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_106",
+                      "name":  "mcp_github_list_commits",
+                      "hint":  "mcp github list commits",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_107",
+                      "name":  "mcp_github_list_dependabot_alerts",
+                      "hint":  "mcp github list dependabot alerts",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_108",
+                      "name":  "mcp_github_list_discussion_categories",
+                      "hint":  "mcp github list discussion categories",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_109",
+                      "name":  "mcp_github_list_discussions",
+                      "hint":  "mcp github list discussions",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_110",
+                      "name":  "mcp_github_list_gists",
+                      "hint":  "mcp github list gists",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_111",
+                      "name":  "mcp_github_list_issues",
+                      "hint":  "mcp github list issues",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_112",
+                      "name":  "mcp_github_list_notifications",
+                      "hint":  "mcp github list notifications",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_113",
+                      "name":  "mcp_github_list_pull_requests",
+                      "hint":  "mcp github list pull requests",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_114",
+                      "name":  "mcp_github_list_secret_scanning_alerts",
+                      "hint":  "mcp github list secret scanning alerts",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_115",
+                      "name":  "mcp_github_list_sub_issues",
+                      "hint":  "mcp github list sub issues",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_116",
+                      "name":  "mcp_github_list_tags",
+                      "hint":  "mcp github list tags",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_117",
+                      "name":  "mcp_github_list_workflow_jobs",
+                      "hint":  "mcp github list workflow jobs",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_118",
+                      "name":  "mcp_github_list_workflow_run_artifacts",
+                      "hint":  "mcp github list workflow run artifacts",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_119",
+                      "name":  "mcp_github_list_workflow_runs",
+                      "hint":  "mcp github list workflow runs",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_120",
+                      "name":  "mcp_github_list_workflows",
+                      "hint":  "mcp github list workflows",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_121",
+                      "name":  "mcp_github_manage_notification_subscription",
+                      "hint":  "mcp github manage notification subscription",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_122",
+                      "name":  "mcp_github_manage_repository_notification_subscription",
+                      "hint":  "mcp github manage repository notification subscription",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_123",
+                      "name":  "mcp_github_mark_all_notifications_read",
+                      "hint":  "mcp github mark all notifications read",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_124",
+                      "name":  "mcp_github_merge_pull_request",
+                      "hint":  "mcp github merge pull request",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_125",
+                      "name":  "mcp_github_push_files",
+                      "hint":  "mcp github push files",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_126",
+                      "name":  "mcp_github_remove_sub_issue",
+                      "hint":  "mcp github remove sub issue",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_127",
+                      "name":  "mcp_github_reprioritize_sub_issue",
+                      "hint":  "mcp github reprioritize sub issue",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_128",
+                      "name":  "mcp_github_request_copilot_review",
+                      "hint":  "mcp github request copilot review",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_129",
+                      "name":  "mcp_github_rerun_failed_jobs",
+                      "hint":  "mcp github rerun failed jobs",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_130",
+                      "name":  "mcp_github_rerun_workflow_run",
+                      "hint":  "mcp github rerun workflow run",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_131",
+                      "name":  "mcp_github_run_workflow",
+                      "hint":  "mcp github run workflow",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_132",
+                      "name":  "mcp_github_search_code",
+                      "hint":  "mcp github search code",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_133",
+                      "name":  "mcp_github_search_issues",
+                      "hint":  "mcp github search issues",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_134",
+                      "name":  "mcp_github_search_orgs",
+                      "hint":  "mcp github search orgs",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_135",
+                      "name":  "mcp_github_search_pull_requests",
+                      "hint":  "mcp github search pull requests",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_136",
+                      "name":  "mcp_github_search_repositories",
+                      "hint":  "mcp github search repositories",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_137",
+                      "name":  "mcp_github_search_users",
+                      "hint":  "mcp github search users",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_138",
+                      "name":  "mcp_github_submit_pending_pull_request_review",
+                      "hint":  "mcp github submit pending pull request review",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_139",
+                      "name":  "mcp_github_update_gist",
+                      "hint":  "mcp github update gist",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_140",
+                      "name":  "mcp_github_update_issue",
+                      "hint":  "mcp github update issue",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_141",
+                      "name":  "mcp_github_update_pull_request",
+                      "hint":  "mcp github update pull request",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_142",
+                      "name":  "mcp_github_update_pull_request_branch",
+                      "hint":  "mcp github update pull request branch",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_143",
+                      "name":  "mcp_hn_get_stories",
+                      "hint":  "mcp hn get stories",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_144",
+                      "name":  "mcp_hn_get_story_info",
+                      "hint":  "mcp hn get story info",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_145",
+                      "name":  "mcp_hn_get_user_info",
+                      "hint":  "mcp hn get user info",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_146",
+                      "name":  "mcp_hn_search_stories",
+                      "hint":  "mcp hn search stories",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_147",
+                      "name":  "mcp_markitdown_convert_to_markdown",
+                      "hint":  "mcp markitdown convert to markdown",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_148",
+                      "name":  "mcp_microsoft_doc_microsoft_docs_fetch",
+                      "hint":  "mcp microsoft doc microsoft docs fetch",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_149",
+                      "name":  "mcp_microsoft_doc_microsoft_docs_search",
+                      "hint":  "mcp microsoft doc microsoft docs search",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_150",
+                      "name":  "mcp_microsoft_fab_environment_library_files",
+                      "hint":  "mcp microsoft fab environment library files",
+                      "sources":  [
+                                      "current-agent-core-and-deferred-tools"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_151",
+                      "name":  "mcp_microsoft_fab_get_environment_details",
+                      "hint":  "mcp microsoft fab get environment details",
+                      "sources":  [
+                                      "current-agent-core-and-deferred-tools"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_152",
+                      "name":  "mcp_microsoft_fab_get_fabricConnection_code_snippet",
+                      "hint":  "mcp microsoft fab get fabric Connection code snippet",
+                      "sources":  [
+                                      "current-agent-core-and-deferred-tools"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_153",
+                      "name":  "mcp_microsoft_fab_get_lakehouse_detail",
+                      "hint":  "mcp microsoft fab get lakehouse detail",
+                      "sources":  [
+                                      "current-agent-core-and-deferred-tools"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_154",
+                      "name":  "mcp_microsoft_fab_get_notebookutils_doc",
+                      "hint":  "mcp microsoft fab get notebookutils doc",
+                      "sources":  [
+                                      "current-agent-core-and-deferred-tools"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_155",
+                      "name":  "mcp_microsoft_fab_get_table_column_stats",
+                      "hint":  "mcp microsoft fab get table column stats",
+                      "sources":  [
+                                      "current-agent-core-and-deferred-tools"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_156",
+                      "name":  "mcp_microsoft_fab_list_artifacts",
+                      "hint":  "mcp microsoft fab list artifacts",
+                      "sources":  [
+                                      "current-agent-core-and-deferred-tools"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_157",
+                      "name":  "mcp_microsoft_fab_list_fabric_artifact_contents",
+                      "hint":  "mcp microsoft fab list fabric artifact contents",
+                      "sources":  [
+                                      "current-agent-core-and-deferred-tools"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_158",
+                      "name":  "mcp_microsoft_fab_preview_lakehouse_table",
+                      "hint":  "mcp microsoft fab preview lakehouse table",
+                      "sources":  [
+                                      "current-agent-core-and-deferred-tools"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_159",
+                      "name":  "mcp_microsoft_fab_query_code_examples",
+                      "hint":  "mcp microsoft fab query code examples",
+                      "sources":  [
+                                      "current-agent-core-and-deferred-tools"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_160",
+                      "name":  "mcp_microsoft_fab_query_python_symbols",
+                      "hint":  "mcp microsoft fab query python symbols",
+                      "sources":  [
+                                      "current-agent-core-and-deferred-tools"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_161",
+                      "name":  "mcp_microsoft_lea_microsoft_code_sample_search",
+                      "hint":  "mcp microsoft lea microsoft code sample search",
+                      "sources":  [
+                                      "current-agent-core-and-deferred-tools"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_162",
+                      "name":  "mcp_microsoft_lea_microsoft_docs_fetch",
+                      "hint":  "mcp microsoft lea microsoft docs fetch",
+                      "sources":  [
+                                      "current-agent-core-and-deferred-tools"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_163",
+                      "name":  "mcp_microsoft_lea_microsoft_docs_search",
+                      "hint":  "mcp microsoft lea microsoft docs search",
+                      "sources":  [
+                                      "current-agent-core-and-deferred-tools"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_164",
+                      "name":  "mcp_perplexity_perplexity_ask",
+                      "hint":  "mcp perplexity perplexity ask",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_165",
+                      "name":  "mcp_playwright_browser_click",
+                      "hint":  "mcp playwright browser click",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_166",
+                      "name":  "mcp_playwright_browser_close",
+                      "hint":  "mcp playwright browser close",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_167",
+                      "name":  "mcp_playwright_browser_console_messages",
+                      "hint":  "mcp playwright browser console messages",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_168",
+                      "name":  "mcp_playwright_browser_drag",
+                      "hint":  "mcp playwright browser drag",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_169",
+                      "name":  "mcp_playwright_browser_evaluate",
+                      "hint":  "mcp playwright browser evaluate",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_170",
+                      "name":  "mcp_playwright_browser_file_upload",
+                      "hint":  "mcp playwright browser file upload",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_171",
+                      "name":  "mcp_playwright_browser_handle_dialog",
+                      "hint":  "mcp playwright browser handle dialog",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_172",
+                      "name":  "mcp_playwright_browser_hover",
+                      "hint":  "mcp playwright browser hover",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_173",
+                      "name":  "mcp_playwright_browser_install",
+                      "hint":  "mcp playwright browser install",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_174",
+                      "name":  "mcp_playwright_browser_navigate",
+                      "hint":  "mcp playwright browser navigate",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_175",
+                      "name":  "mcp_playwright_browser_navigate_back",
+                      "hint":  "mcp playwright browser navigate back",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_176",
+                      "name":  "mcp_playwright_browser_navigate_forward",
+                      "hint":  "mcp playwright browser navigate forward",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_177",
+                      "name":  "mcp_playwright_browser_network_requests",
+                      "hint":  "mcp playwright browser network requests",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_178",
+                      "name":  "mcp_playwright_browser_press_key",
+                      "hint":  "mcp playwright browser press key",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_179",
+                      "name":  "mcp_playwright_browser_resize",
+                      "hint":  "mcp playwright browser resize",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_180",
+                      "name":  "mcp_playwright_browser_select_option",
+                      "hint":  "mcp playwright browser select option",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_181",
+                      "name":  "mcp_playwright_browser_snapshot",
+                      "hint":  "mcp playwright browser snapshot",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_182",
+                      "name":  "mcp_playwright_browser_tab_close",
+                      "hint":  "mcp playwright browser tab close",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_183",
+                      "name":  "mcp_playwright_browser_tab_list",
+                      "hint":  "mcp playwright browser tab list",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_184",
+                      "name":  "mcp_playwright_browser_tab_new",
+                      "hint":  "mcp playwright browser tab new",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_185",
+                      "name":  "mcp_playwright_browser_tab_select",
+                      "hint":  "mcp playwright browser tab select",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_186",
+                      "name":  "mcp_playwright_browser_take_screenshot",
+                      "hint":  "mcp playwright browser take screenshot",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_187",
+                      "name":  "mcp_playwright_browser_type",
+                      "hint":  "mcp playwright browser type",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_188",
+                      "name":  "mcp_playwright_browser_wait_for",
+                      "hint":  "mcp playwright browser wait for",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_189",
+                      "name":  "mcp_pylance_mcp_s_pylanceAnalyze",
+                      "hint":  "mcp pylance mcp s pylance Analyze",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_190",
+                      "name":  "mcp_pylance_mcp_s_pylanceCheckSignatureCompatibility",
+                      "hint":  "mcp pylance mcp s pylance Check Signature Compatibility",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_191",
+                      "name":  "mcp_pylance_mcp_s_pylanceDocuments",
+                      "hint":  "mcp pylance mcp s pylance Documents",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_192",
+                      "name":  "mcp_pylance_mcp_s_pylanceFileSyntaxErrors",
+                      "hint":  "mcp pylance mcp s pylance File Syntax Errors",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_193",
+                      "name":  "mcp_pylance_mcp_s_pylanceImports",
+                      "hint":  "mcp pylance mcp s pylance Imports",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_194",
+                      "name":  "mcp_pylance_mcp_s_pylanceInstalledTopLevelModules",
+                      "hint":  "mcp pylance mcp s pylance Installed Top Level Modules",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_195",
+                      "name":  "mcp_pylance_mcp_s_pylanceInvokeRefactoring",
+                      "hint":  "mcp pylance mcp s pylance Invoke Refactoring",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_196",
+                      "name":  "mcp_pylance_mcp_s_pylanceLSP",
+                      "hint":  "mcp pylance mcp s pylance LSP",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_197",
+                      "name":  "mcp_pylance_mcp_s_pylancePythonDebug",
+                      "hint":  "mcp pylance mcp s pylance Python Debug",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_198",
+                      "name":  "mcp_pylance_mcp_s_pylancePythonEnvironments",
+                      "hint":  "mcp pylance mcp s pylance Python Environments",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_199",
+                      "name":  "mcp_pylance_mcp_s_pylancePythonProfileExplorer",
+                      "hint":  "mcp pylance mcp s pylance Python Profile Explorer",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_200",
+                      "name":  "mcp_pylance_mcp_s_pylancePythonProfiling",
+                      "hint":  "mcp pylance mcp s pylance Python Profiling",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_201",
+                      "name":  "mcp_pylance_mcp_s_pylanceRunCodeSnippet",
+                      "hint":  "mcp pylance mcp s pylance Run Code Snippet",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_202",
+                      "name":  "mcp_pylance_mcp_s_pylanceSemanticContext",
+                      "hint":  "mcp pylance mcp s pylance Semantic Context",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_203",
+                      "name":  "mcp_pylance_mcp_s_pylanceSettings",
+                      "hint":  "mcp pylance mcp s pylance Settings",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_204",
+                      "name":  "mcp_pylance_mcp_s_pylanceSyntaxErrors",
+                      "hint":  "mcp pylance mcp s pylance Syntax Errors",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_205",
+                      "name":  "mcp_pylance_mcp_s_pylanceUpdatePythonEnvironment",
+                      "hint":  "mcp pylance mcp s pylance Update Python Environment",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_206",
+                      "name":  "mcp_pylance_mcp_s_pylanceWorkspaceRoots",
+                      "hint":  "mcp pylance mcp s pylance Workspace Roots",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_207",
+                      "name":  "mcp_pylance_mcp_s_pylanceWorkspaceUserFiles",
+                      "hint":  "mcp pylance mcp s pylance Workspace User Files",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_208",
+                      "name":  "mcp_sequentialthi_sequentialthinking",
+                      "hint":  "mcp sequentialthi sequentialthinking",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_209",
+                      "name":  "mcp_sqlcl-mcp-ser_annotation_generate",
+                      "hint":  "mcp sqlcl mcp ser annotation generate",
+                      "sources":  [
+                                      "current-agent-core-and-deferred-tools"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_210",
+                      "name":  "mcp_sqlcl-mcp-ser_connect",
+                      "hint":  "mcp sqlcl mcp ser connect",
+                      "sources":  [
+                                      "current-agent-core-and-deferred-tools"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_211",
+                      "name":  "mcp_sqlcl-mcp-ser_connections_list",
+                      "hint":  "mcp sqlcl mcp ser connections list",
+                      "sources":  [
+                                      "current-agent-core-and-deferred-tools"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_212",
+                      "name":  "mcp_sqlcl-mcp-ser_disconnect",
+                      "hint":  "mcp sqlcl mcp ser disconnect",
+                      "sources":  [
+                                      "current-agent-core-and-deferred-tools"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_213",
+                      "name":  "mcp_sqlcl-mcp-ser_request_status",
+                      "hint":  "mcp sqlcl mcp ser request status",
+                      "sources":  [
+                                      "current-agent-core-and-deferred-tools"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_214",
+                      "name":  "mcp_sqlcl-mcp-ser_schema_information",
+                      "hint":  "mcp sqlcl mcp ser schema information",
+                      "sources":  [
+                                      "current-agent-core-and-deferred-tools"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_215",
+                      "name":  "mcp_sqlcl-mcp-ser_skills_sync",
+                      "hint":  "mcp sqlcl mcp ser skills sync",
+                      "sources":  [
+                                      "current-agent-core-and-deferred-tools"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_216",
+                      "name":  "mcp_sqlcl-mcp-ser_sql_run",
+                      "hint":  "mcp sqlcl mcp ser sql run",
+                      "sources":  [
+                                      "current-agent-core-and-deferred-tools"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_217",
+                      "name":  "mcp_sqlcl-mcp-ser_sqlcl_run",
+                      "hint":  "mcp sqlcl mcp ser sqlcl run",
+                      "sources":  [
+                                      "current-agent-core-and-deferred-tools"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_218",
+                      "name":  "mcp_todos_todo_write",
+                      "hint":  "mcp todos todo write",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_219",
+                      "name":  "mcp_web_deep_research",
+                      "hint":  "mcp web deep research",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_220",
+                      "name":  "mcp_web_reason",
+                      "hint":  "mcp web reason",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_221",
+                      "name":  "mcp_web_search",
+                      "hint":  "mcp web search",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_222",
+                      "name":  "memory",
+                      "hint":  "memory",
+                      "sources":  [
+                                      "current-agent-core-and-deferred-tools"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_223",
+                      "name":  "mermaid-diagram-preview",
+                      "hint":  "mermaid diagram preview",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_224",
+                      "name":  "mermaid-diagram-validator",
+                      "hint":  "mermaid diagram validator",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_225",
+                      "name":  "navigate_page",
+                      "hint":  "navigate page",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_226",
+                      "name":  "notebook_install_packages",
+                      "hint":  "notebook install packages",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_227",
+                      "name":  "notebook_list_packages",
+                      "hint":  "notebook list packages",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_228",
+                      "name":  "open_browser_page",
+                      "hint":  "open browser page",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_229",
+                      "name":  "parallel",
+                      "hint":  "parallel",
+                      "sources":  [
+                                      "current-agent-core-and-deferred-tools"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_230",
+                      "name":  "pgsql_bulk_load_csv",
+                      "hint":  "pgsql bulk load csv",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_231",
+                      "name":  "pgsql_connect",
+                      "hint":  "pgsql connect",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_232",
+                      "name":  "pgsql_db_context",
+                      "hint":  "pgsql db context",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_233",
+                      "name":  "pgsql_describe_csv",
+                      "hint":  "pgsql describe csv",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_234",
+                      "name":  "pgsql_disconnect",
+                      "hint":  "pgsql disconnect",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_235",
+                      "name":  "pgsql_list_databases",
+                      "hint":  "pgsql list databases",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_236",
+                      "name":  "pgsql_list_servers",
+                      "hint":  "pgsql list servers",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_237",
+                      "name":  "pgsql_modify",
+                      "hint":  "pgsql modify",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_238",
+                      "name":  "pgsql_open_script",
+                      "hint":  "pgsql open script",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_239",
+                      "name":  "pgsql_query",
+                      "hint":  "pgsql query",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_240",
+                      "name":  "pgsql_visualize_schema",
+                      "hint":  "pgsql visualize schema",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_241",
+                      "name":  "read_file",
+                      "hint":  "read file",
+                      "sources":  [
+                                      "current-agent-core-and-deferred-tools"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_242",
+                      "name":  "read_notebook_cell_output",
+                      "hint":  "read notebook cell output",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_243",
+                      "name":  "read_page",
+                      "hint":  "read page",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_244",
+                      "name":  "resolve_memory_file_uri",
+                      "hint":  "resolve memory file uri",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_245",
+                      "name":  "run_in_terminal",
+                      "hint":  "run in terminal",
+                      "sources":  [
+                                      "current-agent-core-and-deferred-tools"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_246",
+                      "name":  "run_notebook_cell",
+                      "hint":  "run notebook cell",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_247",
+                      "name":  "run_playwright_code",
+                      "hint":  "run playwright code",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_248",
+                      "name":  "run_task",
+                      "hint":  "run task",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_249",
+                      "name":  "run_vscode_command",
+                      "hint":  "run vscode command",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_250",
+                      "name":  "runSubagent",
+                      "hint":  "run Subagent",
+                      "sources":  [
+                                      "current-agent-core-and-deferred-tools"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_251",
+                      "name":  "screenshot_page",
+                      "hint":  "screenshot page",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_252",
+                      "name":  "semantic_search",
+                      "hint":  "semantic search",
+                      "sources":  [
+                                      "current-agent-core-and-deferred-tools"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_253",
+                      "name":  "send_to_terminal",
+                      "hint":  "send to terminal",
+                      "sources":  [
+                                      "current-agent-core-and-deferred-tools"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_254",
+                      "name":  "session_store_sql",
+                      "hint":  "session store sql",
+                      "sources":  [
+                                      "current-agent-core-and-deferred-tools"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_255",
+                      "name":  "task_complete",
+                      "hint":  "task complete",
+                      "sources":  [
+                                      "current-agent-core-and-deferred-tools"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_256",
+                      "name":  "terminal_last_command",
+                      "hint":  "terminal last command",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_257",
+                      "name":  "terminal_selection",
+                      "hint":  "terminal selection",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_258",
+                      "name":  "testFailure",
+                      "hint":  "test Failure",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_259",
+                      "name":  "tool_search_tool",
+                      "hint":  "tool search tool",
+                      "sources":  [
+                                      "current-agent-core-and-deferred-tools"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_260",
+                      "name":  "type_in_page",
+                      "hint":  "type in page",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_261",
+                      "name":  "view_image",
+                      "hint":  "view image",
+                      "sources":  [
+                                      "current-agent-core-and-deferred-tools"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_262",
+                      "name":  "vscode_askQuestions",
+                      "hint":  "vscode ask Questions",
+                      "sources":  [
+                                      "current-agent-core-and-deferred-tools"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_263",
+                      "name":  "vscode_listCodeUsages",
+                      "hint":  "vscode list Code Usages",
+                      "sources":  [
+                                      "current-agent-core-and-deferred-tools"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_264",
+                      "name":  "vscode_manageTodoList",
+                      "hint":  "vscode manage Todo List",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_265",
+                      "name":  "vscode_renameSymbol",
+                      "hint":  "vscode rename Symbol",
+                      "sources":  [
+                                      "current-agent-core-and-deferred-tools"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_266",
+                      "name":  "vscode_searchExtensions_internal",
+                      "hint":  "vscode search Extensions internal",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  },
+                  {
+                      "id":  "tool_267",
+                      "name":  "vscode-websearchforcopilot_webSearch",
+                      "hint":  "vscode websearchforcopilot web Search",
+                      "sources":  [
+                                      "vscode-tool-embeddings"
+                                  ]
+                  }
+              ]
+}

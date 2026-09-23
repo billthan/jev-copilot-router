@@ -106,6 +106,8 @@ The test suite is offline. It validates PowerShell 5.1 parsing, provider restric
 
 See [benchmark/README.md](benchmark/README.md) and the sanitized [initial benchmark](benchmark/results/2026-09-23-initial.md).
 
+The full-tool harness currently inventories 268 unique tools from the installed Copilot registry plus the active agent supplement. It enforces exactly one coverage case per tool, adds five reviewed deny controls, and refuses live execution when catalog coverage or OpenRouter credit preflight fails.
+
 Initial result over 24 cases and three repeats:
 
 | Metric | Jev | Explicit test-only GPT-5.6 Sol baseline |

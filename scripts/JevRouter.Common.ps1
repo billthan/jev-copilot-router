@@ -23,18 +23,20 @@ function Get-OpenRouterApiKey {
         return $env:OPENROUTER_API_KEY
     }
 
-    $credentialPath = if ($env:JEV_ROUTER_CREDENTIAL_PATH) {
-        $env:JEV_ROUTER_CREDENTIAL_PATH
+    $credentialPaths = @()
+    if ($env:JEV_ROUTER_CREDENTIAL_PATH) {
+        $credentialPaths += $env:JEV_ROUTER_CREDENTIAL_PATH
     }
-    else {
-        Join-Path $script:JevRouterRoot 'openrouter-key.clixml'
-    }
-
-    if (-not (Test-Path -LiteralPath $credentialPath -PathType Leaf)) {
+    $credentialPaths += @(
+        (Join-Path $script:JevRouterRoot 'openrouter-key.clixml'),
+        (Join-Path $HOME '.copilot\jev-router\openrouter-key.clixml')
+    )
+    $credentialPath = @($credentialPaths | Where-Object { Test-Path -LiteralPath $_ -PathType Leaf } | Select-Object -First 1)
+    if ($credentialPath.Count -eq 0) {
         return $null
     }
 
-    $credential = Import-Clixml -LiteralPath $credentialPath
+    $credential = Import-Clixml -LiteralPath $credentialPath[0]
     if (-not ($credential -is [System.Management.Automation.PSCredential])) {
         return $null
     }
