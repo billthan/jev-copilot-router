@@ -1,0 +1,146 @@
+[
+  {
+    "id": "agent-customization-create",
+    "prompt": "Create a VS Code custom agent for reviewing Terraform plans and restrict it to read-only tools.",
+    "expected": ["agent-customization"],
+    "tags": ["positive", "explicit"]
+  },
+  {
+    "id": "agent-customization-debug",
+    "prompt": "Why is my .instructions.md applyTo glob being ignored? Fix the YAML frontmatter.",
+    "expected": ["agent-customization"],
+    "tags": ["positive", "debug"]
+  },
+  {
+    "id": "agent-customization-skill",
+    "prompt": "Package this deployment checklist as a reusable SKILL.md for Copilot.",
+    "expected": ["agent-customization"],
+    "tags": ["positive", "explicit"]
+  },
+  {
+    "id": "chronicle-standup",
+    "prompt": "Give me a standup summary of my Copilot work from the last 24 hours.",
+    "expected": ["chronicle"],
+    "tags": ["positive", "explicit"]
+  },
+  {
+    "id": "chronicle-search",
+    "prompt": "Find the past coding session where I edited ado_controls.py and worked on PR 8.",
+    "expected": ["chronicle"],
+    "tags": ["positive", "search"]
+  },
+  {
+    "id": "chronicle-tips",
+    "prompt": "Analyze my recent Copilot sessions and recommend ways to improve my workflow.",
+    "expected": ["chronicle"],
+    "tags": ["positive", "analysis"]
+  },
+  {
+    "id": "search-view-results",
+    "prompt": "Show me the results currently displayed in the VS Code Search view.",
+    "expected": ["get-search-view-results"],
+    "tags": ["positive", "explicit"]
+  },
+  {
+    "id": "install-extension-python",
+    "prompt": "Install the stable ms-python.python extension in VS Code.",
+    "expected": ["install-vscode-extension"],
+    "tags": ["positive", "explicit"]
+  },
+  {
+    "id": "install-extension-prerelease",
+    "prompt": "Install the prerelease version of ms-vscode.powershell and enable it.",
+    "expected": ["install-vscode-extension"],
+    "tags": ["positive", "variant"]
+  },
+  {
+    "id": "setup-vite-project",
+    "prompt": "Create a complete new Vite React TypeScript project with linting, tests, and a sensible folder structure.",
+    "expected": ["project-setup-info-local"],
+    "tags": ["positive", "scaffold"]
+  },
+  {
+    "id": "setup-vscode-extension",
+    "prompt": "Scaffold a complete TypeScript VS Code extension project from scratch.",
+    "expected": ["project-setup-info-local"],
+    "tags": ["positive", "scaffold"]
+  },
+  {
+    "id": "setup-context7",
+    "prompt": "Set up a brand-new Next.js workspace using the latest official library documentation from Context7.",
+    "expected": ["project-setup-info-context7"],
+    "tags": ["positive", "context7"]
+  },
+  {
+    "id": "troubleshoot-slow",
+    "prompt": "Why was my last Copilot request slow? Inspect the direct agent debug logs and explain it from evidence.",
+    "expected": ["troubleshoot"],
+    "tags": ["positive", "logs"]
+  },
+  {
+    "id": "troubleshoot-skill-load",
+    "prompt": "Investigate why Copilot did not load the expected skill in this session; use the JSONL debug logs.",
+    "expected": ["troubleshoot"],
+    "tags": ["positive", "logs"]
+  },
+  {
+    "id": "multi-customization-troubleshoot",
+    "prompt": "Debug why my custom .agent.md was ignored by examining the Copilot JSONL logs, then fix the agent frontmatter.",
+    "expected": ["agent-customization", "troubleshoot"],
+    "tags": ["positive", "multi-skill"]
+  },
+  {
+    "id": "multi-history-search-view",
+    "prompt": "Show the current VS Code Search results, then find the prior Copilot session where I ran that same search.",
+    "expected": ["chronicle", "get-search-view-results"],
+    "tags": ["positive", "multi-skill"]
+  },
+  {
+    "id": "multi-setup-extension",
+    "prompt": "Install ms-vscode.vscode-typescript-next, then scaffold a complete TypeScript extension workspace.",
+    "expected": ["install-vscode-extension", "project-setup-info-local"],
+    "tags": ["positive", "multi-skill"]
+  },
+  {
+    "id": "negative-fix-python",
+    "prompt": "Fix the failing Python unit test in src/parser.py and run pytest.",
+    "expected": [],
+    "tags": ["negative", "coding"]
+  },
+  {
+    "id": "negative-explain-code",
+    "prompt": "Explain how the retry loop in ado_controls.py works.",
+    "expected": [],
+    "tags": ["negative", "question"]
+  },
+  {
+    "id": "negative-single-component",
+    "prompt": "Add one React button component to this existing application.",
+    "expected": [],
+    "tags": ["negative", "boundary"]
+  },
+  {
+    "id": "negative-runtime-debug",
+    "prompt": "The API returns HTTP 500 in production. Diagnose the application runtime error from these stack traces.",
+    "expected": [],
+    "tags": ["negative", "boundary"]
+  },
+  {
+    "id": "negative-file-search",
+    "prompt": "Search this workspace for every reference to Get-SkillMetadata.",
+    "expected": [],
+    "tags": ["negative", "boundary"]
+  },
+  {
+    "id": "negative-docs",
+    "prompt": "Update the README with installation instructions for the existing project.",
+    "expected": [],
+    "tags": ["negative", "documentation"]
+  },
+  {
+    "id": "negative-git-review",
+    "prompt": "Review the current git diff for correctness and regressions.",
+    "expected": [],
+    "tags": ["negative", "review"]
+  }
+]
